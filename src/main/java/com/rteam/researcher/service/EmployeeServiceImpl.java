@@ -21,8 +21,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
  
     @Transactional
-    public List<Employee> listEmployee() {
- 
+    public List<Employee> listEmployees() {
         return employeeDAO.listEmployee();
     }
  

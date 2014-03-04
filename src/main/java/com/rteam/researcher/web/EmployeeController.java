@@ -3,6 +3,7 @@ package com.rteam.researcher.web;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,17 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.rteam.researcher.domain.Employee;
 import com.rteam.researcher.service.EmployeeService;
 
+@Controller
 public class EmployeeController {
 	@Autowired
     private EmployeeService employeeService;
 
     @RequestMapping("/index")
-    public String listContacts(Map<String, Object> map) {
+    public String listEmployees(Map<String, Object> map) {
 
         map.put("employee", new Employee());
-        map.put("contactList", employeeService.listEmployee());
+        map.put("employeeList", employeeService.listEmployees());
 
-        return "contact";
+        return "employee";
     }
     
     @RequestMapping("/")
