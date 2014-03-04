@@ -141,7 +141,7 @@
             <version>3.3.0.ga</version>
         </dependency>
         
-        <!-- Transactio dependency -->
+        <!-- Transaction dependency -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
@@ -153,6 +153,13 @@
             <artifactId>spring-orm</artifactId>
             <version>${org.springframework-version}</version>
         </dependency>
+
+        <!-- PostgreSQL JDBC Connector -->
+        <dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.3-1100-jdbc41</version>
+		</dependency>
         
 	</dependencies>
     <build>
