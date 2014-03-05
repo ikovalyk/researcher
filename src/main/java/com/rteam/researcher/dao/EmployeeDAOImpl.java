@@ -14,22 +14,22 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
-    public void addEmployee(Employee contact) {
-        sessionFactory.getCurrentSession().save(contact);
+    public void addEmployee(Employee employee) {
+        sessionFactory.getCurrentSession().save(employee);
     }
 
     @SuppressWarnings("unchecked")
     public List<Employee> listEmployee() {
 
-        return sessionFactory.getCurrentSession().createQuery("from Contact")
+        return sessionFactory.getCurrentSession().createQuery("from Employee")
             .list();
     }
 
     public void removeEmployee(Integer id) {
-        Employee contact = (Employee) sessionFactory.getCurrentSession().load(
+        Employee employee = (Employee) sessionFactory.getCurrentSession().load(
                 Employee.class, id);
-        if (null != contact) {
-            sessionFactory.getCurrentSession().delete(contact);
+        if (null != employee) {
+            sessionFactory.getCurrentSession().delete(employee);
         }
 
     }

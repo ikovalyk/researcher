@@ -33,16 +33,16 @@ public class Employee {
     public void setId(Integer id) {
     	this.id = id;
     }
-    public String getFirstName() {
+    public String getFirstname() {
     	return this.firstname;
     }
-    public void setFirstName(String firstName) {
+    public void setFirstname(String firstName) {
     	this.firstname = firstName;
     }
-    public String getLastName() {
+    public String getLastname() {
     	return this.lastname;
     }
-    public void setLastName(String lastName) {
+    public void setLastname(String lastName) {
     	this.lastname = lastName;
     }
     public String getEmail() {

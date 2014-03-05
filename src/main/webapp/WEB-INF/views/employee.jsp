@@ -46,7 +46,7 @@
 		</tr>
 		<tr>
 			<td colspan="2"><input type="submit"
-				value="<spring:message code="label.addcontact"/>" /></td>
+				value="<spring:message code="label.addemployee"/>" /></td>
 		</tr>
 	</table>
 </form:form>
@@ -60,7 +60,7 @@
 			<th><spring:message code="label.telephone" /></th>
 			<th>&nbsp;</th>
 		</tr>
-		<c:forEach items="${employeeList}" var="contact">
+		<c:forEach items="${employeeList}" var="employees">
 			<tr>
 				<td>${employee.lastname}, ${employee.firstname}</td>
 				<td>${employee.email}</td>

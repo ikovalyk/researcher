@@ -6,7 +6,7 @@ import com.rteam.researcher.domain.Employee;
 
 public interface EmployeeService {
 
-    public void addEmployee(Employee contact);
+    public void addEmployee(Employee employee);
 
     public List<Employee> listEmployees();
 
